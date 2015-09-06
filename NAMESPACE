@@ -1,0 +1,50 @@
+importFrom("graphics", "text")
+importFrom("methods", "new")
+importFrom("stats", "density", "median", "p.adjust",
+           "p.adjust.methods", "pchisq", "pf", "pnorm", "ptukey",
+           "qnorm", "qtukey", "t.test", "var")
+importFrom("utils", "read.csv")
+  
+import(ggplot2,
+       graph,
+       reshape2,
+       Rgraphviz)
+
+export(
+  wilcoxonSignedTest,
+  friedmanTest,
+  imanDavenportTest,
+  friedmanAlignedRanksTest,
+  quadeTest,
+  anovaTest,
+  nemenyiTest,
+  tukeyTest,
+  customPost,
+  friedmanPost,
+  tukeyPost,
+  friedmanAlignedRanksPost,
+  quadePost,
+  adjustShaffer,
+  adjustBergmannHommel,
+  adjustHolland,
+  adjustFinner,
+  adjustRom,
+  adjustLi,
+  exhaustiveSets,
+  rankMatrix,
+  plotPvalues,
+  plotDensities,
+  qqplotGaussian,
+  plotCD,
+  drawAlgorithmGraph,
+  writeTabular,
+  readExperimentFile,
+  readComparisonFile,
+  readExperimentDir,
+  readComparisonDir,
+  summarizeData,
+  filterData,
+  multipleComparisonTest,
+  postHocTest,
+  contrastEstimationMatrix
+)
