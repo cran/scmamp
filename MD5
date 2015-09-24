@@ -1,11 +1,11 @@
-4f7fe24b24d73bc4c1a47cac46264e55 *DESCRIPTION
-4e60d8de05b48ab30025bc112b6f8084 *NAMESPACE
-b6764446b9ffd8e738324149cccb6975 *R/data_manipulation.R
-9a0e5bdd99fa6e4deaa43710164f006c *R/latex.R
+539e4598a3fa34d89840994cf2c46103 *DESCRIPTION
+222734429e3d3672d6767316fef6dd06 *NAMESPACE
+94d0fe81db8e1ffbe33e8d245828b4e3 *R/data_manipulation.R
+63990f6c2b75e32ec1172ede209a9200 *R/latex.R
 a0150462bdec287a4079f12abe86be39 *R/loading_functions.R
-cccf1a01443981cef3b06fa3744509ab *R/plotting.R
+eccea3ffb0d324489c1cd1eacceefad2 *R/plotting.R
 d84e22eec40024c8514f44af6915ac48 *R/post_hoc.R
-879ac4824cdf661c7edc687637345767 *R/scmamp.R
+e4b4961ed1035c4be986e676e3279e39 *R/scmamp.R
 45072985b80b080c105f5076918a332b *R/sysdata.rda
 5451927bb180920501021982065f1964 *R/tests.R
 cfa07fe3dff1a23c4fac0a94fcffa4f6 *README.md
@@ -300,6 +300,7 @@ a715cf2dc366b268712dcb7de99b2492 *man/adjustHolland.Rd
 9fd373e98fadf1b1776a0da6e9bfc340 *man/adjustRom.Rd
 32680f7d1b32aa5c5dff2bc68916b220 *man/adjustShaffer.Rd
 4f8fc56d7a600b256c279f8b00dceac1 *man/anovaTest.Rd
+ab39865371039f85af599357be7a4b58 *man/booleanMatrix.Rd
 3e9ac672992fbdcae3c96c112e7d2bd4 *man/contrastEstimationMatrix.Rd
 1dc64b3d2f9a84d8444ffef807d8ceb0 *man/customPost.Rd
 39f32dc0cceff10b8ef685d66769437b *man/data.blum.2015.Rd
@@ -335,5 +336,3 @@ d6b98c0456fb779a15c502d9ae895fb0 *man/wilcoxonSignedTest.Rd
 a135343965cb586f5d15a3c0793752b2 *man/writeTabular.Rd
 1ba2f0a27e0745022073f777c96e742d *vignettes/Data_loading_and_manipulation.Rmd
 0edf6d5209a72b385f0f289ae5909b63 *vignettes/Statistical_assessment_of_the_differences.Rmd
-5073bfe2a1ff4f0b5e32e84ae64f3e70 *vignettes/images/first_analysis_2-1.pdf
-9b1dd258c206e6c9f428167af7bd37f9 *vignettes/images/first_analysis_3-1.pdf
