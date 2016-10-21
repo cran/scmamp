@@ -16,10 +16,6 @@
 #' qqplotGaussian(sample)
 
 qqplotGaussian <- function (data, ...) {
-#   if(!require(ggplot2)) {
-#     stop("This function requires the package ggplot2, which is not ",
-#          "installed. You can install it typing install.packages('ggplot2')")
-#   }
   
   processVector <- function (sample) {
     # Auxiliar function to get the points for a single qqplot
@@ -71,10 +67,6 @@ qqplotGaussian <- function (data, ...) {
 #' 
 
 plotDensities <- function (data, ...) {
-#   if(!require(ggplot2)) {
-#     stop("This function requires the package ggplot2, which is not installed. ",
-#          "You can install it typing install.packages('ggplot2')")
-#   }
   
   if (is.vector(data)){
     d  <- density(data)
@@ -115,16 +107,7 @@ plotDensities <- function (data, ...) {
 #' 
  
 plotPvalues <- function(pvalue.matrix, alg.order=NULL, show.pvalue=TRUE, font.size=5) {
-#   if(!require(reshape2)) {
-#     stop("This function requires the package reshape2, which is not installed. ",
-#          "You can install it typing install.packages('reshape2')")
-#   }
-  
-#   if(!require(ggplot2)) {
-#     stop("This function requires the package ggplot2, which is not installed. ",
-#          "You can install it typing install.packages('ggplot2')")
-#   }
-  
+
   # Convert the matrix into a data frame and order the algorithms according to 
   # the desired order.
   df <- melt(pvalue.matrix)
@@ -453,7 +436,8 @@ plotRanking <- function (pvalues, summary, alpha=0.05, cex=0.75, decreasing=FALS
 #' data(data_blum_2015)
 #' data <- filterData(data.blum.2015, condition="Size == 1000", remove.cols=1:2)
 #' res <- postHocTest(data, test = "friedman", use.rank=TRUE, correct="bergmann")
-#' drawAlgorithmGraph(res$corrected.pval, res$summary)
+#' ## This function requieres the package Rgraphviz
+#' # drawAlgorithmGraph(res$corrected.pval, res$summary)
 #' 
 
 drawAlgorithmGraph <- function (pvalue.matrix, mean.value, ..., 
@@ -461,12 +445,7 @@ drawAlgorithmGraph <- function (pvalue.matrix, mean.value, ...,
                                 highlight.color="chartreuse3", node.color="gray30", 
                                 font.color="white", digits=2, 
                                 node.width=5, node.height=2) {
-#   if(!require(Rgraphviz)) {
-#     stop("This function requires the package Rgraphviz, which is not installed. ",
-#          "You can install it typing\n\n ",
-#          "source('http://www.bioconductor.org/biocLite.R')\n\n and then\n\n ",
-#          "biocLite('Rgraphviz')\n\n")
-#   }
+
   # Just in case we have a matrix ...
   if (is.matrix(mean.value)) {
     mean.value <- mean.value[1, ]
